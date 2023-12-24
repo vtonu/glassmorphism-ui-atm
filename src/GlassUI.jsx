@@ -25,6 +25,7 @@ function GlassUI() {
   return (
     <div>
       <div className="upper-layer">
+        <img src={require('./close.png')} width="16" alt="saeslogo" className="closeButton" />
         <div className="atmHeader">
           <img src={require('./saeslogo.png')} width="100" alt="saeslogo" />
           <h1>Bank Account</h1>
