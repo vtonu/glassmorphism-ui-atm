@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -51,12 +52,12 @@ body {
   border-left: 1px solid rgba(255, 255, 255, 0.11);
 
   padding: 10px;
-  font-weight: 700;
   color: rgb(46, 46, 46);
+  font-family: 'Raleway', sans-serif;
 }
 .button:hover {
   cursor: pointer;
-  color: rgb(46, 46, 96);
+  color: rgb(46, 46, 86);
 }
 h6 {
   color: rgb(21, 185, 21);

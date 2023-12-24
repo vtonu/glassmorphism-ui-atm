@@ -2,6 +2,21 @@ import { useState } from 'react';
 
 function GlassUI() {
   const [inputValue, setInputValue] = useState('');
+  const [balance, setBalance] = useState(758);
+
+  const deposit = () => {
+    setBalance(balance + Number(inputValue));
+    setInputValue('');
+  };
+
+  const withdraw = () => {
+    if (balance >= Number(inputValue)) {
+      setBalance(balance - Number(inputValue));
+      setInputValue('');
+    } else {
+      alert('Insufficient balance');
+    }
+  };
 
   const clearInput = () => {
     setInputValue('');
@@ -17,15 +32,28 @@ function GlassUI() {
         </div>
         <div className="accountBalance">
           <h5>Current Balance:</h5>
-          <h1>$ 758.00</h1>
-          <input type="number" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+          <h1>${balance.toFixed(2)}</h1>
+          <input
+            type="number"
+            value={inputValue}
+            onChange={(e) => {
+              if (e.target.value.length <= 7) {
+                setInputValue(e.target.value);
+              }
+            }}
+            max="1000000"
+          />
         </div>
         <div className="buttonsHeader">
           <button className="button" onClick={clearInput}>
-            Clear
+            CLEAR
           </button>
-          <button className="button">Deposit</button>
-          <button className="button">Withdraw</button>
+          <button className="button" onClick={deposit}>
+            DEPOSIT
+          </button>
+          <button className="button" onClick={withdraw}>
+            WITHDRAW
+          </button>
         </div>
       </div>
     </div>
