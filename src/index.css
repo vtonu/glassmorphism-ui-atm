@@ -9,9 +9,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('https://insider-gaming.com/wp-content/uploads/2023/03/why-is-gta-5-still-so-popular.jpg');
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
     Verdana, sans-serif;
+  /* Center and scale the image nicely */
+  background-image: url('https://insider-gaming.com/wp-content/uploads/2023/03/why-is-gta-5-still-so-popular.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .upper-layer {
   display: flex;
