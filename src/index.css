@@ -96,7 +96,7 @@ h6 {
 .accountBalance {
   display: flex;
   flex-direction: column;
-  padding-top: 10%;
+  padding-top: 16%;
 }
 
 /* Glassmorphism Input */
