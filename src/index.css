@@ -82,8 +82,9 @@ h1 {
   font-size: 1.5rem;
 }
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: Archivo Black;
+  color: white;
 }
 h6 {
   color: rgba(32, 212, 32, 1);
@@ -136,11 +137,6 @@ input::-webkit-inner-spin-button {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-/* SAES Logo opacity */
-img {
-  opacity: 0.8;
 }
 
 /* Red close (x) button in the corner */
