@@ -24,7 +24,7 @@ body {
   flex-direction: column;
   gap: 10px;
 
-  height: 500px;
+  height: 420px;
   /* width: 20vw; */
   width: 350px;
   padding: 10px;
@@ -96,7 +96,7 @@ h6 {
 .accountBalance {
   display: flex;
   flex-direction: column;
-  padding-top: 30%;
+  padding-top: 10%;
 }
 
 /* Glassmorphism Input */
