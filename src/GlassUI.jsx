@@ -30,9 +30,9 @@ function GlassUI() {
           <img src={require('./saeslogo.png')} width="100" alt="saeslogo" />
           <h2>ATM</h2>
           {/* <h5>Manage your account balance.</h5> */}
-          <h6>Active</h6>
         </div>
         <div className="accountBalance">
+          <h6>Active</h6>
           <h5>Current Balance:</h5>
           <h1>${balance.toFixed(2)}</h1>
           <input
