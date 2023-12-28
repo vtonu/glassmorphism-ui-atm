@@ -16,6 +16,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Main Glassmorphism Wrapper */
 .upper-layer {
   display: flex;
   flex-direction: column;
@@ -40,6 +42,8 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 4;
 }
+
+/* Glassmorphism Buttons (Clear, Deposit, Withdraw) */
 .button {
   /* Adding Glassmorphism effect to the body*/
   background: rgba(255, 255, 255, 0);
@@ -58,11 +62,14 @@ body {
   color: rgb(46, 46, 46);
   font-family: 'Raleway', sans-serif;
 }
+
+/* Style button (Clear, Deposit, Withdraw) on hover */
 .button:hover {
   cursor: pointer;
   color: rgb(46, 46, 96);
   background-color: rgb(0, 0, 0, 0.04);
 }
+
 h6 {
   color: rgb(32, 212, 32);
   font-weight: 600;
@@ -70,16 +77,18 @@ h6 {
 h1 {
   font-size: 1.5rem;
 }
-.buttonsHeader {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+h2 {
+  font-size: 2.5rem;
 }
+
+/* Current Balance $755.00 */
 .accountBalance {
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  padding-top: 30%;
 }
+
+/* Glassmorphism Input */
 input {
   /* Adding Glassmorphism effect to the body*/
   background: rgba(255, 255, 255, 0);
@@ -98,18 +107,33 @@ input {
   font-weight: 700;
   color: rgb(46, 46, 46);
 }
+
+/* Style input on focus */
 input:focus {
   outline: none;
   appearance: none;
   -webkit-appearance: none;
 }
+
+/* Remove number input arrows */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+/* Clear, Deposit & Withdraw buttons */
+.buttonsHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* SAES Logo opacity */
 img {
   opacity: 0.8;
 }
+
+/* Red close (x) button in the corner */
 .closeButton {
   position: absolute;
   top: 5px;
@@ -117,4 +141,9 @@ img {
 }
 .closeButton:hover {
   cursor: pointer;
+}
+
+/* SAES Logo, ATM & Green Active text line spacing */
+.atmHeader {
+  line-height: 1.2;
 }

@@ -28,7 +28,7 @@ function GlassUI() {
         <img src={require('./close.png')} width="16" alt="saeslogo" className="closeButton" />
         <div className="atmHeader">
           <img src={require('./saeslogo.png')} width="100" alt="saeslogo" />
-          <h1>Bank Account</h1>
+          <h2>ATM</h2>
           {/* <h5>Manage your account balance.</h5> */}
           <h6>Active</h6>
         </div>
