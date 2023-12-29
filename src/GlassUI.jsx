@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 function GlassUI() {
   const [inputValue, setInputValue] = useState('');
-  const [balance, setBalance] = useState(1225.55);
+  const [balance, setBalance] = useState(225.55);
 
   const deposit = () => {
     setBalance(balance + Number(inputValue));
